@@ -308,3 +308,29 @@ exports.deleteAccount = async (req, res, next) => {
     next(error);
   }
 };
+
+exports.getPaginatedUsers = async (req, res, next) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+
+    const skip = (page - 1) * limit;
+    const users = await User.find()
+      .skip(skip)
+      .limit(limit)
+      .select("-password"); 
+
+    const totalUsers = await User.countDocuments();
+
+    res.status(200).json({
+      success: true,
+      page,
+      limit,
+      totalPages: Math.ceil(totalUsers / limit),
+      totalUsers,
+      data: users,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
