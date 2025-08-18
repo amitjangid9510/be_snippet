@@ -30,7 +30,7 @@ module.exports = connectDB;
 
 // const db = pool.promise();
 
-// const testConnection = async () => {
+// const connectDB = async () => {
 //   try {
 //     await db.query('SELECT 1');
 //     console.log('Database connected successfully');
@@ -39,4 +39,7 @@ module.exports = connectDB;
 //   }
 // };
 
-// module.exports =testConnection;
+// module.exports = { db, connectDB };
+
+
+
