@@ -1,0 +1,52 @@
+# Node modules (dependencies)
+node_modules/
+
+# Logs
+logs/
+package-lock.json
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*.local
+
+# OS/System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Build output (if using dist or build folders)
+dist/
+build/
+
+# PM2 logs (if using PM2 for process management)
+pids/
+*.pid
+*.seed
+
+# Coverage reports (if using Jest, nyc, etc.)
+coverage/
+
+# Binaries
+*.exe
+*.out
+
+# SQLite or other local DB files (optional)
+*.sqlite
+*.sqlite3
+*.db
+
+# Optional: uploads or generated content (custom folders you want to ignore)
+public/uploads/
+uploads/
+
+# Optional: ignore debug dump
+*.tgz
