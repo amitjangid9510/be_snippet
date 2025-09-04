@@ -58,3 +58,6 @@ app.use(errorHandler);
     process.exit(1);
   }
 })();
+
+// npm install jsonwebtoken crypto mongoose bcrypt validator dotenv cors helmet cookie-parser path express multer
+
