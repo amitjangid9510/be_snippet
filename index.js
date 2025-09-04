@@ -61,7 +61,6 @@ app.use(errorHandler);
 
 // npm install jsonwebtoken crypto mongoose bcrypt validator dotenv cors helmet cookie-parser path express multer
 
-
 //--------------# Windows ---------------
 // mkdir src
 // mkdir src\routes
@@ -78,11 +77,8 @@ app.use(errorHandler);
 // New-Item -Path src\controllers\UserAuth.controller.js -ItemType File
 // New-Item -Path src\db\db.js -ItemType File
 
-
 //--------------# linux ---------------
-
 // mkdir -p src/routes src/middlewares src/utils src/db src/controllers src/models
-
 // touch src/middlewares/multer.js
 // touch src/utils/errorHandler.js
 // touch src/middlewares/authMiddleware.js
