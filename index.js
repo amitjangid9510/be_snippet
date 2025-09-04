@@ -9,11 +9,6 @@ const errorHandler = require('./src/utils/errorHandler');
 
 // Routes
 const adminRoutes = require('./src/routes/adminRoutes');
-const authRoutes = require('./src/routes/userAuthRoutes');
-const userRoutes = require('./src/routes/userRoutes');
-const productRoutes = require('./src/routes/productRoutes');
-const orderRoutes = require('./src/routes/orderRoutes');
-const cartRoutes = require('./src/routes/cartRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -39,11 +34,6 @@ app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 
 // Routes
 app.use('/api/v1/admin', adminRoutes);
-app.use('/api/v1/auth', authRoutes);
-app.use('/api/v1/users', userRoutes);
-app.use('/api/v1/products', productRoutes);
-app.use('/api/v1/orders', orderRoutes);
-app.use('/api/v1/cart', cartRoutes);
 
 // 404 Handler
 app.use((req, res, next) => {
