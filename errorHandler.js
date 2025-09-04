@@ -1,4 +1,3 @@
-const AppError = require('./AppError');
 
 const errorHandler = (err, req, res, next) => {
   const isProd = process.env.NODE_ENV === 'production';
@@ -36,12 +35,6 @@ const errorHandler = (err, req, res, next) => {
   } else if (err.name === 'TokenExpiredError') {
     statusCode = 401;
     message = 'Your session has expired. Please login again.';
-  }
-
-  // Custom App Errors
-  else if (err instanceof AppError) {
-    statusCode = err.statusCode;
-    message = err.message;
   }
 
   // Default (other errors)
