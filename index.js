@@ -59,7 +59,7 @@ app.use(errorHandler);
   }
 })();
 
-// npm install jsonwebtoken crypto mongoose bcrypt validator dotenv cors helmet cookie-parser path express multer
+// npm install jsonwebtoken  mongoose bcrypt validator dotenv cors helmet cookie-parser path express multer
 
 //--------------# Windows ---------------
 
