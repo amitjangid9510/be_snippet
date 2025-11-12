@@ -86,6 +86,15 @@ app.use((req, res, next) => {
 // PORT=5000
 // MONGO_URI=mongodb://localhost:27017/your_database_name
 // JWT_SECRET=your_jwt_secret
+
+// DB_HOST=mysql-baad161-amj-4070.l.aivencloud.com
+// DB_PORT=12718
+// DB_USER=avnadmin
+// DB_PASSWORD=AVNS_OTuKaeeyUAHmkO18A7g
+// DB_NAME=defaultdb
+
+// DB_SSL_MODE=REQUIRED
+// DB_SSL_CA=./ca.pem
 // "@ | Out-File -Encoding utf8 .env
 
 // @"
@@ -111,7 +120,16 @@ app.use((req, res, next) => {
 
 // echo "PORT=5000
 // MONGO_URI=mongodb://localhost:27017/your_database_name
-// JWT_SECRET=your_jwt_secret" > .env
+// JWT_SECRET=your_jwt_secret
+
+// DB_HOST=mysql-baad161-amj-4070.l.aivencloud.com
+// DB_PORT=12718
+// DB_USER=avnadmin
+// DB_PASSWORD=AVNS_OTuKaeeyUAHmkO18A7g
+// DB_NAME=defaultdb
+
+// DB_SSL_MODE=REQUIRED
+// DB_SSL_CA=./ca.pem" > .env
 
 // echo "node_modules/
 // .env
