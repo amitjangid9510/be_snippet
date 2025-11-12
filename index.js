@@ -62,27 +62,59 @@ app.use(errorHandler);
 // npm install jsonwebtoken crypto mongoose bcrypt validator dotenv cors helmet cookie-parser path express multer
 
 //--------------# Windows ---------------
+
+// npm init -y
 // mkdir src
 // mkdir src\routes
 // mkdir src\middlewares
 // mkdir src\utils
-// mkdir src\db
+// mkdir src\config
 // mkdir src\controllers
 // mkdir src\models
+
 // New-Item -Path src\middlewares\multer.js -ItemType File
-// New-Item -Path src\utils\errorHandler.js -ItemType File
 // New-Item -Path src\middlewares\authMiddleware.js -ItemType File
+// New-Item -Path src\utils\errorHandler.js -ItemType File
 // New-Item -Path src\routes\authRoutes.js -ItemType File
 // New-Item -Path src\models\User.model.js -ItemType File
 // New-Item -Path src\controllers\UserAuth.controller.js -ItemType File
-// New-Item -Path src\db\db.js -ItemType File
+// New-Item -Path src\config\db.js -ItemType File
+// New-Item -Path .env -ItemType File
+// New-Item -Path .gitignore -ItemType File
+
+// @"
+// PORT=5000
+// MONGO_URI=mongodb://localhost:27017/your_database_name
+// JWT_SECRET=your_jwt_secret
+// "@ | Out-File -Encoding utf8 .env
+
+// @"
+// node_modules/
+// .env
+//package-lock.json
+
+// "@ | Out-File -Encoding utf8 .gitignore
+
 
 //--------------# linux ---------------
-// mkdir -p src/routes src/middlewares src/utils src/db src/controllers src/models
+// npm init -y
+// mkdir -p src/routes src/middlewares src/utils src/config src/controllers src/models
 // touch src/middlewares/multer.js
 // touch src/utils/errorHandler.js
 // touch src/middlewares/authMiddleware.js
 // touch src/routes/authRoutes.js
 // touch src/models/User.model.js
 // touch src/controllers/UserAuth.controller.js
-// touch src/db/db.js
+// touch src/config/db.js
+// touch .env
+// touch .gitignore
+
+// echo "PORT=5000
+// MONGO_URI=mongodb://localhost:27017/your_database_name
+// JWT_SECRET=your_jwt_secret" > .env
+
+// echo "node_modules/
+// .env
+// logs
+// package-lock.json" > .gitignore
+
