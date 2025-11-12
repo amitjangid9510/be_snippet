@@ -1,14 +1,14 @@
 require('dotenv').config({ path: './.env' });
 const express = require('express');
 const cors = require('cors');
-const helmet = require('helmet');
-const cookieParser = require('cookie-parser');
-const path = require('path');
+// const helmet = require('helmet');
+// const cookieParser = require('cookie-parser');
+// const path = require('path');
 const { connectDB } = require('./src/config/db');
-const errorHandler = require('./src/utils/errorHandler');
+// const errorHandler = require('./src/utils/errorHandler');
 
 // Routes
-const adminRoutes = require('./src/routes/adminRoutes');
+// const adminRoutes = require('./src/routes/adminRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -26,14 +26,14 @@ app.use(
   })
 );
 
-app.use(helmet());
-app.use(cookieParser());
+// app.use(helmet());
+// app.use(cookieParser());
 
 // Serve static files
-app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
+// app.use('/uploads', express.static(path.join(__dirname, 'public/uploads')));
 
 // Routes
-app.use('/api/v1/admin', adminRoutes);
+// app.use('/api/v1/admin', adminRoutes);
 
 // 404 Handler
 app.use((req, res, next) => {
@@ -44,7 +44,7 @@ app.use((req, res, next) => {
 });
 
 // Global Error Handler 
-app.use(errorHandler);
+// app.use(errorHandler);
 
 // Start Server
 (async () => {
