@@ -43,3 +43,25 @@ module.exports = connectDB;
 
 
 
+
+
+//DB_URL=mysql://avnadmin:AVNS_OTuKaeeyUAHmkO18A7g@mysql-baad161-amj-4070.l.aivencloud.com:12718/defaultdb?ssl-mode=REQUIRED
+// const mysql = require('mysql2');
+// require('dotenv').config();
+
+// const pool = mysql.createPool(process.env.DB_URL);
+// const db = pool.promise();
+
+// const connectDB = async () => {
+//   try {
+//     await db.query('SELECT 1');
+//     console.log('✅ Database connected successfully');
+//   } catch (err) {
+//     console.error('❌ Error connecting to the database:', err.message);
+//   }
+// };
+
+// module.exports = { db, connectDB };
+
+
+
