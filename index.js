@@ -88,6 +88,7 @@ app.use((req, res, next) => {
 // MONGO_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
 // JWT_SECRET=your_jwt_secret
 
+// DB_URL=mysql://root:my-secret-pw@db:3306/mydb
 // DB_HOST=mysql-baad161-amj-4070.l.aivencloud.com
 // DB_PORT=12718
 // DB_USER=avnadmin
@@ -123,6 +124,7 @@ app.use((req, res, next) => {
 // MONGO_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
 // JWT_SECRET=your_jwt_secret
 
+// DB_URL=mysql://root:my-secret-pw@db:3306/mydb
 // DB_HOST=mysql-baad161-amj-4070.l.aivencloud.com
 // DB_PORT=12718
 // DB_USER=avnadmin
