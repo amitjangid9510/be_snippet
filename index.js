@@ -60,6 +60,8 @@ app.use((req, res, next) => {
 })();
 
 // npm install jsonwebtoken  mongoose bcrypt validator dotenv cors helmet cookie-parser path express multer
+// npm install --save-dev nodemon
+
 //winget install OpenJS.NodeJS
 
 //--------------# Windows ---------------
