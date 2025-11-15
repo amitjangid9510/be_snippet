@@ -3,16 +3,14 @@ const mongoose = require('mongoose')
 const connectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URI)
-        console.log('Mongodb connected');
+        console.log('Mongo_db Database connected successfully');
     } catch (error) {
         console.log("Mongodb connection error:", error.message);
         process.exit(1)
     }
 }
 
-module.exports = connectDB;
-
-
+module.exports = { connectDB };
 
 // const mysql = require('mysql2');
 // require('dotenv').config();
