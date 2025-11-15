@@ -87,7 +87,7 @@ app.use((req, res, next) => {
 
 // @"
 // PORT=5000
-// MONGO_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
+// MONGODB_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
 // JWT_SECRET=your_jwt_secret
 
 // #mysql://USER:PASSWORD@HOST:PORT/DATABASE
@@ -124,7 +124,7 @@ app.use((req, res, next) => {
 // touch .gitignore
 
 // echo "PORT=5000
-// MONGO_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
+// MONGODB_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
 // JWT_SECRET=your_jwt_secret
 
 // #mysql://USER:PASSWORD@HOST:PORT/DATABASE
