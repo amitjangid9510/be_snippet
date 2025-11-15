@@ -85,7 +85,7 @@ app.use((req, res, next) => {
 
 // @"
 // PORT=5000
-// MONGO_URI=mongodb://localhost:27017/your_database_name
+// MONGO_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
 // JWT_SECRET=your_jwt_secret
 
 // DB_HOST=mysql-baad161-amj-4070.l.aivencloud.com
@@ -120,7 +120,7 @@ app.use((req, res, next) => {
 // touch .gitignore
 
 // echo "PORT=5000
-// MONGO_URI=mongodb://localhost:27017/your_database_name
+// MONGO_URI=mongodb+srv://amitjangid9510:amitamit@cluster0.76xbuq5.mongodb.net
 // JWT_SECRET=your_jwt_secret
 
 // DB_HOST=mysql-baad161-amj-4070.l.aivencloud.com
